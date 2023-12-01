@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Dirooz';
+  src: url('../Font/Dirooz.woff');
+}
+
+:root {
+  --color-purple-primary: #4c0083;
+  --color-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Dirooz;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.main-header {
+  background: var(--color-purple-primary);
+  color: var(--color-white);
+
+  & .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__nav {
+  }
+  
+  &__ul {
+    display: flex;
+    align-items: center;
+  }
+
+  &__li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  & .navbar__svg {
+    width: 30px;
+  }
+
+  & .navbar__span {
+    &--user {
+      font-weight: 900;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
+}
