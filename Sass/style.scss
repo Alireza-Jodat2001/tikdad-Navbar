@@ -31,9 +31,8 @@
     align-items: center;
   }
 
-  &__nav {
-  }
-  
+  &__nav {}
+
   &__ul {
     display: flex;
     align-items: center;
@@ -43,15 +42,56 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+
+    &--shopping {
+      &::before {
+        content: '۳';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: red;
+        position: absolute;
+        right: -1px;
+        top: 4px;
+      }
+    }
+
+    &--massage {
+      &::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: red;
+        position: absolute;
+        right: -1px;
+        top: 4px;
+      }
+    }
+
+    &:not(:last-child) {
+      border-left: 1px solid rgba(255, 255, 255, .4);
+    }
   }
 
   & .navbar__svg {
-    width: 30px;
+    width: 25px;
+
+    &--user {
+      width: 35px;
+    }
   }
 
   & .navbar__span {
     &--user {
       font-weight: 900;
+      font-size: 20px;
     }
   }
 }
