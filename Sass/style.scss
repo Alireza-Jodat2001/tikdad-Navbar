@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Dirooz';
-    src: url('../Font/Dirooz.woff');
+    font-family: "Dirooz";
+    src: url("../Font/Dirooz.woff");
 }
 
 :root {
@@ -32,7 +32,6 @@
         align-items: center;
         padding: 15px 0;
     }
-
 }
 
 .menu-button {
@@ -73,7 +72,7 @@
         color: var(--color-gray-dark);
         font-size: 15px;
 
-        &:focus~.search-field__button .search-field__icon,
+        &:focus ~ .search-field__button .search-field__icon,
         &:focus::placeholder {
             color: var(--color-gray-dark);
             stroke: var(--color-gray-dark);
@@ -82,7 +81,7 @@
         &::placeholder {
             color: var(--color-gray-light);
             font-size: 18px;
-            transition: all .3s;
+            transition: all 0.3s;
         }
     }
 
@@ -103,7 +102,7 @@
     &__icon {
         width: 25px;
         stroke: var(--color-gray-light);
-        transition: all .3s;
+        transition: all 0.3s;
     }
 }
 
@@ -118,7 +117,7 @@
 
         &--shopping {
             &::before {
-                content: '۳';
+                content: "۳";
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -135,7 +134,7 @@
 
         &--massage {
             &::before {
-                content: '';
+                content: "";
                 width: 7px;
                 height: 7px;
                 border-radius: 50%;
@@ -147,7 +146,7 @@
         }
 
         &:not(:last-child) {
-            border-left: 1px solid rgba(255, 255, 255, .4);
+            border-left: 1px solid rgba(255, 255, 255, 0.4);
         }
 
         &:last-child {
